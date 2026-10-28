@@ -27,3 +27,14 @@ th, td {
 table {
     border-collapse: collapse;
 }
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 32px;
+}
+
+footer a {
+    color: white;
+}
