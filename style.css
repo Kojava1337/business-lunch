@@ -77,3 +77,8 @@ main {
 main section {
     margin-bottom: 32px;
 }
+
+.development-notice {
+    font-size: 24px;
+    font-weight: 600;
+}
