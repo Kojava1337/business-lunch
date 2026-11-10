@@ -1,0 +1,52 @@
+.dish-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.dish-card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    border: 2px solid transparent;
+    border-radius: 35px;
+    background-color: white;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    cursor: pointer;
+}
+
+.dish-card:hover {
+    border-color: tomato;
+}
+
+.dish-price {
+    font-size: 22px;
+}
+
+.dish-name {
+    font-size: 20px;
+}
+
+.dish-portion {
+    color: gray;
+    margin-top: auto;
+}
+
+.dish-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 35px;
+}
+
+.dish-card button {
+    background-color: #f1eee9;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.dish-card:hover button {
+    background-color: #d1d1d1;
+}
