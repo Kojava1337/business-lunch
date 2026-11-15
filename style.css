@@ -102,9 +102,9 @@ main section {
     nav {
         justify-content: space-between;
     }
-    .about-image  {
+    .about-image {
         width: 500px;
-    } 
+    }
 }
 
 @media (max-width: 600px) {
@@ -117,7 +117,7 @@ main section {
         font-size: 22px;
     }
 
-    .about-image  {
+    .about-image {
         width: 100%;
     }
 
