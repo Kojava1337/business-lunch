@@ -50,3 +50,19 @@
 .dish-card:hover button {
     background-color: #d1d1d1;
 }
+
+@media (max-width: 800px) {
+    .dish-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .dish-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section > h2 {
+        text-align: center;
+    }
+}
