@@ -100,6 +100,40 @@
                 </div>
             </section>
         </main>
+        <section class="order-section">
+            <h2>Сделать заказ</h2>
+            <form action="https://httpbin.org/post" method="post">
+                <div>
+                    <h3>Ваш заказ</h3>
+                    <label for="soup">Суп</label>
+                    <select id="soup" name="soup" required>
+                        <option value="">Выберите суп</option>
+                        <option value="gazpacho">Гаспачо</option>
+                        <option value="mushroom_soup">Грибной суп-пюре</option>
+                        <option value="norwegian_soup">Норвежский суп</option>
+                    </select>
+                    <label for="main_course">Главное блюдо</label>
+                    <select id="main_course" name="main_course" required>
+                        <option value="">Выберите главное блюдо</option>
+                        <option value="fried_potatoes_with_mushrooms">Жареная картошка с грибами</option>
+                        <option value="lasagna">Лазанья</option>
+                        <option value="chicken_cutlets_with_mashed_potatoes">Котлеты из курицы с картофельным пюре</option>
+                    </select>
+                    <label for="drink">Напиток</label>
+                    <select id="drink" name="drink" required>
+                        <option value="">Выберите напиток</option>
+                        <option value="orange_juice">Апельсиновый сок</option>
+                        <option value="apple_juice">Яблочный сок</option>
+                        <option value="carrot_juice">Морковный сок</option>
+                    </select>
+                    <label for="order_comment">Комментарий к заказу</label>
+                    <textarea id="order_comment" name="comment" rows="4"></textarea>
+                </div>
+                <div>
+                    <h3>Ваши данные</h3>
+                </div>
+            </form>
+        </section>
         <footer id="contacts">
             <p>Контакты</p>
             <p>
