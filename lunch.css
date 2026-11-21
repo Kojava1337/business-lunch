@@ -52,7 +52,14 @@
 }
 
 .order-section {
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 0 20px 32px;
+    box-sizing: border-box;
+}
+
+.order-section > h2 {
+    text-align: center;
 }
 
 .order-section form {
