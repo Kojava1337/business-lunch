@@ -37,6 +37,19 @@ const orderLabels = {
 
 const emptyOrder = document.querySelector("#empty-order");
 const orderItems = document.querySelector("#order-items");
+const totalPrice = document.querySelector("#total-price");
+
+function updateTotalPrice() {
+    let total = 0;
+
+    Object.values(selectedDishes).forEach((dish) => {
+        if (dish !== null) {
+            total += dish.price;
+        }
+    });
+
+    totalPrice.textContent = `${total} ₽`;
+}
 
 document.querySelectorAll(".dish-card").forEach((card) => {
     const button = card.querySelector("button");
@@ -63,6 +76,7 @@ document.querySelectorAll(".dish-card").forEach((card) => {
 
         card.classList.add("selected");
         button.textContent = "Добавлено";
+        updateTotalPrice();
     });
 });
 
@@ -87,4 +101,5 @@ orderForm.addEventListener("reset", () => {
 
     emptyOrder.hidden = false;
     orderItems.hidden = true;
+    updateTotalPrice();
 });
