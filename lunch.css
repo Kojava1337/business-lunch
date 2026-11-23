@@ -19,6 +19,15 @@
     border-color: tomato;
 }
 
+.dish-card.selected {
+    border-color: tomato;
+}
+
+.dish-card.selected button {
+    background-color: tomato;
+    color: white;
+}
+
 .dish-price {
     font-size: 22px;
 }

@@ -42,27 +42,28 @@
             <form action="https://httpbin.org/post" method="post">
                 <div class="order-column">
                     <h3>Ваш заказ</h3>
-                    <label for="soup">Суп</label>
-                    <select id="soup" name="soup" required>
-                        <option value="">Выберите суп</option>
-                        <option value="gazpacho">Гаспачо</option>
-                        <option value="mushroom_soup">Грибной суп-пюре</option>
-                        <option value="norwegian_soup">Норвежский суп</option>
-                    </select>
-                    <label for="main_course">Главное блюдо</label>
-                    <select id="main_course" name="main_course" required>
-                        <option value="">Выберите главное блюдо</option>
-                        <option value="fried_potatoes_with_mushrooms">Жареная картошка с грибами</option>
-                        <option value="lasagna">Лазанья</option>
-                        <option value="chicken_cutlets_with_mashed_potatoes">Котлеты из курицы с картофельным пюре</option>
-                    </select>
-                    <label for="drink">Напиток</label>
-                    <select id="drink" name="drink" required>
-                        <option value="">Выберите напиток</option>
-                        <option value="orange_juice">Апельсиновый сок</option>
-                        <option value="apple_juice">Яблочный сок</option>
-                        <option value="carrot_juice">Морковный сок</option>
-                    </select>
+
+                    <p id="empty-order">Ничего не выбрано</p>
+
+                    <div id="order-items" hidden>
+                        <p>
+                            <strong>Суп</strong><br>
+                            <span id="selected-soup">Блюдо не выбрано</span>
+                        </p>
+                        <p>
+                            <strong>Главное блюдо</strong><br>
+                            <span id="selected-main-course">Блюдо не выбрано</span>
+                        </p>
+                        <p>
+                            <strong>Напиток</strong><br>
+                            <span id="selected-drink">Напиток не выбран</span>
+                        </p>
+                    </div>
+
+                    <input type="hidden" id="soup" name="soup">
+                    <input type="hidden" id="main_course" name="main_course">
+                    <input type="hidden" id="drink" name="drink">
+
                     <label for="order_comment">Комментарий к заказу</label>
                     <textarea id="order_comment" name="comment" rows="4"></textarea>
                 </div>
