@@ -28,7 +28,7 @@ const dishes = [
         image: "images/menu/soups/norwegian_soup.jpg",
         alt: "Сливочный суп с кусочками рыбы и зеленью"
     },
-        {
+    {
         keyword: "fried_potatoes_with_mushrooms",
         name: "Жареная картошка с грибами",
         price: 150,

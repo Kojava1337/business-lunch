@@ -56,7 +56,7 @@
     margin-top: 8px;
 }
 
-.dish-card:hover button {
+.dish-card:not(.selected):hover button {
     background-color: #d1d1d1;
 }
 
