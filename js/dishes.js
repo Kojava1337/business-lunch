@@ -1,3 +1,5 @@
+/* exported dishes */
+
 const dishes = [
     {
         keyword: "gazpacho",
